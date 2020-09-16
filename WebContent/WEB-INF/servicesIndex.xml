@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<services>
+    <webserviceClient name="{http://tempuri.org/}Core" type="JAX-WS">
+        <endpoint name="CoreSoap">
+            <operation name="ConvertDocument"/>
+            <operation name="ConvertSignDocument"/>
+            <operation name="AddCAF"/>
+            <operation name="RemoveCAF"/>
+            <operation name="ArchiveCAF"/>
+        </endpoint>
+        <endpoint name="CoreSoap12">
+            <operation name="ConvertDocument"/>
+            <operation name="ConvertSignDocument"/>
+            <operation name="AddCAF"/>
+            <operation name="RemoveCAF"/>
+            <operation name="ArchiveCAF"/>
+        </endpoint>
+    </webserviceClient>
+    <webserviceClient name="{http://wsnpqa.ddbseven.cl}ddb7TransaccionalWS" type="JAX-WS">
+        <endpoint name="ddb7TransaccionalWSSoap">
+            <operation name="SendTransaction"/>
+        </endpoint>
+        <endpoint name="ddb7TransaccionalWSSoap12">
+            <operation name="SendTransaction"/>
+        </endpoint>
+    </webserviceClient>
+</services>
